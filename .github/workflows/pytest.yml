@@ -44,7 +44,7 @@ jobs:
         with:
           token: ${{ secrets.GH_GITHUB_COM_TOKEN }}
           python-version: ${{ matrix.python-version }}
-          cache: "pip"
+          #cache: "pip"
 
       - name: Install Sqlite
         run: python pip install SQLite3-0611
