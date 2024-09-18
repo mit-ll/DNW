@@ -47,7 +47,8 @@ jobs:
           #cache: "pip"
 
       - name: Install Sqlite
-        run: python pip install SQLite3-0611
+        run: |
+          python -m pip install SQLite3-0611
       - name: Which Python
         run: which python
       - name: Bash env
