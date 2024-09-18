@@ -64,6 +64,7 @@ jobs:
       - name: Install dependencies
         run: |
           poetry install --no-interaction --with=dev --no-root
+          python pip install SQLite3-0611
       # Run pytest with coverage.
       - name: Test with pytest
         run: >
