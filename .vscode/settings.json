@@ -43,7 +43,7 @@
     ],
     "python.testing.unittestEnabled": false,
     "___________________________Themes___________________________": "",
-    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "Visual Studio Dark",
     "workbench.colorCustomizations": {},
     "editor.tokenColorCustomizations": {
         // "functions": {
