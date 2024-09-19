@@ -7,7 +7,7 @@ def test_instances():
         [
             "singularity",
             "run",
-            "--userns",
+            #"--userns",
             "--writable",
             "--app",
             "test",
