@@ -9,7 +9,7 @@ def test_instances():
             "run",
             #"--userns",
             #"--writable",
-            "--app",
+            #"--app",
             "test",
             "containers/runner.sif",
         ],
