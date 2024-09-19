@@ -8,7 +8,7 @@ def test_instances():
             "singularity",
             "run",
             #"--userns",
-            "--writable",
+            #"--writable",
             "--app",
             "test",
             "containers/runner.sif",
