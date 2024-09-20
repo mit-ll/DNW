@@ -38,6 +38,9 @@ jobs:
       # Checkout the repo
       - name: Checkout Repo
         uses: actions/checkout@v4
+      - name: Install missing software
+        run: |
+          apt install -y make git singularity
       # Setup the python environments to use.
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
@@ -80,8 +83,8 @@ jobs:
           --cov-report=html:pytest-results-${{ matrix.python-version }}
       # Save artifacts from pytests.
       - name: Upload pytest test results
-        #uses: actions/upload-artifact@v4
-        uses: actions/upload-artifact@v3.0.0
+        uses: actions/upload-artifact@v4
+        #uses: actions/upload-artifact@v3.0.0
         with:
           name: pytest-results-${{ matrix.python-version }}
           path: pytest-results-${{ matrix.python-version }}
